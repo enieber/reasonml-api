@@ -1,0 +1,24 @@
+{
+  "name": "estoque-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "npm run-script build && node lib/js/src/Index.js",
+    "watch-run": "nodemon lib/js/src/Index.js",
+    "watch": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "cd tests && ./test.sh"
+  },
+  "dependencies": {
+    "bs-decode": "^0.4.0",
+    "bs-express": "^0.12.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-json": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "bs-platform": "^5.0.3",
+    "husky": "^2.1.0"
+  }
+}
